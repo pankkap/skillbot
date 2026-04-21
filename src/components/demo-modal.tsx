@@ -61,21 +61,27 @@ function DemoModalOverlay({ onClose }: { onClose: () => void }) {
           </button>
         </div>
         <div className="p-6">
-          {/* Replace the Calendly URL below with your actual Calendly link */}
+          {/* Contact Info */}
+          <div className="mb-4 text-center">
+            <div className="font-semibold text-base">Pankaj Kapoor</div>
+            <a href="https://wa.me/919729280731" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline block text-sm">WhatsApp: 9729280731</a>
+            <a href="mailto:betalabsindia@gmail.com" className="text-blue-600 hover:underline block text-sm">Email: betalabsindia@gmail.com</a>
+          </div>
           <div className="w-full h-[500px] rounded-lg overflow-hidden bg-muted flex items-center justify-center">
             <iframe
-              src="https://calendly.com/your-link"
+              src="https://calendly.com/betalabsindia/skillbot-demo"
               width="100%"
               height="100%"
               frameBorder="0"
               title="Book a Demo"
               className="w-full h-full"
+              allow="fullscreen"
             />
           </div>
           <p className="text-xs text-muted-foreground mt-3 text-center">
-            Can&apos;t find a time? Email us at{" "}
-            <a href="mailto:hello@skillbot.ai" className="text-primary hover:underline">
-              hello@skillbot.ai
+            Can&apos;t find a time? Email us at{' '}
+            <a href="mailto:betalabsindia@gmail.com" className="text-primary hover:underline">
+              betalabsindia@gmail.com
             </a>
           </p>
         </div>
