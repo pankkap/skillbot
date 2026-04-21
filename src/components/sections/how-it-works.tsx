@@ -51,12 +51,18 @@ export function HowItWorks() {
 
         <div className="relative">
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
             {steps.map((step, index) => (
               <FadeInWhenVisible key={step.title} delay={index * 0.15}>
-                <div className="relative text-center lg:text-center">
+                <div className="relative flex flex-col items-center text-center lg:text-center h-full">
+                  {/* Progress line (except after last step) */}
+                  {index < steps.length - 1 && (
+                    <div className="hidden lg:block absolute top-10 right-[-50%] w-[100%] h-1 z-0">
+                      <div className="h-full w-full bg-gradient-to-r from-border to-transparent dark:from-border dark:to-transparent rounded-full" />
+                    </div>
+                  )}
                   {/* Step number + icon */}
-                  <div className="relative inline-flex items-center justify-center mx-auto mb-6">
+                  <div className="relative inline-flex items-center justify-center mx-auto mb-6 z-10">
                     <div className={cn(
                       "w-16 h-16 rounded-2xl bg-gradient-to-br flex items-center justify-center shadow-lg",
                       step.color
