@@ -51,14 +51,11 @@ export function CTABanner() {
 
           {/* Contact & Booking Info */}
           <div className="mt-10 flex flex-col items-center gap-2">
-            <span className="text-white/90 text-base font-medium">Or connect directly for a demo:</span>
+            <span className="text-white/90 text-base font-medium">Or connect directly for a demo</span>
             <span className="text-white/80 text-sm">Pankaj Kapoor</span>
             <a href="https://wa.me/919729280731" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:underline text-sm">WhatsApp: 9729280731</a>
             <a href="mailto:betalabsindia@gmail.com" className="text-blue-200 hover:underline text-sm">Email: betalabsindia@gmail.com</a>
-            <a href="https://calendly.com/betalabsindia/demo" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-500 text-white font-semibold text-sm hover:bg-blue-600 transition-all">
-              Book via Calendly
-              <ArrowRight className="w-4 h-4" />
-            </a>
+
           </div>
           <p className="text-sm text-white/60 mt-4">
             Free 30-minute walkthrough · No commitment required
