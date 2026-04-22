@@ -92,7 +92,7 @@ export function ComparisonTable() {
 
         <FadeInWhenVisible delay={0.2}>
           <div className="glass rounded-2xl overflow-hidden">
-            <div className="overflow-x-auto">
+            <div className="w-full">
               <table className="w-full min-w-[600px]">
                 {/* Header */}
                 <thead>
